@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Calendar.App">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Global Styles-->
+            <Color x:Key="NavigationPrimary">#349ef4</Color>
+
+            <Color x:Key="MainTextColor">#1c1c1c</Color>
+            <Color x:Key="DisabledTextColor">#666666</Color>
+
+            <Color x:Key="DividerColor">#383838</Color>
+            <Color x:Key="OtherMonthColor">#c4c4c4</Color>
+
+            <Color x:Key="TitleBarColor">#7cc0f8</Color>
+            <Color x:Key="OddRowColor">#d6e1ff</Color>
+            <Color x:Key="EvenRowColor">#ffe0e0</Color>
+            <Color x:Key="DecYearColor">#009905</Color>
+            <Color x:Key="DoyColor">#2000ad</Color>
+            <Color x:Key="MjdColor">#b80000</Color>
+            <Color x:Key="SelectedColor">#57ffee</Color>
+
+            <x:Int16 x:Key="DividerWidth">1</x:Int16>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="BarTextColor" Value="White" />
+
+            </Style>
+
+            <Style x:Key="ButtonStyle1" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource TitleBarColor}"/>
+                <Setter Property="TextColor" Value="{StaticResource MainTextColor}"/>
+                <Setter Property="BorderColor" Value="{StaticResource DividerColor}"/>
+                <Setter Property="BorderWidth" Value="{StaticResource DividerWidth}"/>
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>

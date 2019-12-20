@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewmodel="clr-namespace:Calendar.ViewModels"
+     
+             mc:Ignorable="d"
+             x:Class="Calendar.Views.CalendarPage"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <viewmodel:CalendarViewModel/>
+    </ContentPage.BindingContext>
+
+
+    <ContentPage.Content>
+
+        <StackLayout 
+            Orientation="Vertical"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            >
+
+            <StackLayout 
+            Orientation="Horizontal"
+            HorizontalOptions="FillAndExpand"
+            
+            >
+                <Picker
+                    x:Name="MonthPicker"
+                    Margin="10"
+                    HorizontalOptions="FillAndExpand"
+                    SelectedIndexChanged="MonthPicker_Selected"
+         
+                    />
+
+                <Entry
+                    
+                    x:Name="YearEntry"
+                    Margin="10"
+                    HorizontalOptions="FillAndExpand"
+                    Keyboard="Numeric"
+                    Unfocused="YearEntry_Unfocused"
+                  
+                    />
+
+              
+            </StackLayout>
+            <Grid 
+                x:Name="calendarGrid"
+                HorizontalOptions="Fill"
+                VerticalOptions="CenterAndExpand"
+                Margin="5"
+                ColumnSpacing="0"
+                RowSpacing="0"
+                >
+
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition  Width="{StaticResource DividerWidth}"/>
+                    <ColumnDefinition  Width="*"/>
+                    <ColumnDefinition  Width="{StaticResource DividerWidth}"/>
+                    <ColumnDefinition  Width="*"/>
+                    <ColumnDefinition  Width="{StaticResource DividerWidth}"/>
+                    <ColumnDefinition  Width="*"/>
+                    <ColumnDefinition  Width="{StaticResource DividerWidth}"/>
+                    <ColumnDefinition  Width="*"/>
+                    <ColumnDefinition  Width="{StaticResource DividerWidth}"/>
+                    <ColumnDefinition  Width="*"/>
+                    <ColumnDefinition  Width="{StaticResource DividerWidth}"/>
+                    <ColumnDefinition  Width="*"/>
+                    <ColumnDefinition  Width="{StaticResource DividerWidth}"/>
+                    <ColumnDefinition  Width="*"/>
+                    <ColumnDefinition  Width="{StaticResource DividerWidth}"/>
+                    <ColumnDefinition  Width="*"/>
+                    <ColumnDefinition  Width="{StaticResource DividerWidth}"/>
+            
+                </Grid.ColumnDefinitions>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="{StaticResource DividerWidth}"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="{StaticResource DividerWidth}"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="{StaticResource DividerWidth}"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="{StaticResource DividerWidth}"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="{StaticResource DividerWidth}"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="{StaticResource DividerWidth}"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="{StaticResource DividerWidth}"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="{StaticResource DividerWidth}"/>
+                </Grid.RowDefinitions>
+
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Row="0" Grid.ColumnSpan="17"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Row="2" Grid.ColumnSpan="17"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Row="4" Grid.ColumnSpan="17"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Row="6" Grid.ColumnSpan="17"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Row="8" Grid.ColumnSpan="17"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Row="10" Grid.ColumnSpan="17"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Row="12" Grid.ColumnSpan="17"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Row="14" Grid.ColumnSpan="17"/>
+
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Column="0" Grid.RowSpan="15"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Column="2" Grid.RowSpan="15"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Column="4" Grid.RowSpan="15"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Column="6" Grid.RowSpan="15"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Column="8" Grid.RowSpan="15"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Column="10" Grid.RowSpan="15"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Column="12" Grid.RowSpan="15"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Column="14" Grid.RowSpan="15"/>
+                <BoxView BackgroundColor="{StaticResource DividerColor}" Grid.Column="16" Grid.RowSpan="15"/>
+
+
+            </Grid>
+            <Grid           
+                HorizontalOptions="Fill"
+                VerticalOptions="CenterAndExpand"
+                Margin="10"
+                ColumnSpacing="0"
+                RowSpacing="0"
+                >
+
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition  Width="*"/>
+                    <ColumnDefinition  Width="*"/>
+                    <ColumnDefinition  Width="*"/>
+                    <ColumnDefinition  Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60*"/>
+                </Grid.RowDefinitions>
+                
+                <Button 
+                    Text="Today"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    Pressed="TodayButton_Clicked"
+                    Style="{StaticResource ButtonStyle1}"
+                />
+            </Grid>
+        
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

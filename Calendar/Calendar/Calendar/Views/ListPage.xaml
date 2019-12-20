@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewmodel="clr-namespace:Calendar.ViewModels"
+             mc:Ignorable="d"
+             x:Class="Calendar.Views.ListPage"
+             Title="{Binding Title}"
+             >
+
+    <ContentPage.BindingContext>
+        <viewmodel:ListViewModel/>
+    </ContentPage.BindingContext>
+
+
+    <ContentPage.Content>
+
+        <StackLayout
+            Orientation="Vertical"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            >
+
+            <Grid 
+                
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Margin="10"
+                ColumnSpacing="10"
+                RowSpacing="5"
+                >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+   
+                    <RowDefinition Height="*"/>
+                    
+                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="60*"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+
+                <Label 
+                    Text="Date:"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+                <Label
+                    x:Name="DateLabel"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+                <Label 
+                    Text="Decimal Year:"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+                <Entry
+                    x:Name="DecYEntry"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Keyboard="Numeric"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    Unfocused="DecYEntry_Unfocused"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+                <CheckBox
+                    x:Name="DecYCheckbox"
+                    Grid.Column="2"
+                    Grid.Row="1"
+                    Color="{StaticResource DecYearColor}}"
+                    CheckedChanged="Checkbox_Checked"
+                    />
+
+                <Label 
+                    Text="Day of Year:"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+                <Entry
+                    x:Name="DoyEntry"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Keyboard="Numeric"
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    Unfocused="DoyEntry_Unfocused"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+                <CheckBox
+                    x:Name="DoyCheckbox"
+                    Grid.Column="2"
+                    Grid.Row="2"
+                    Color="{StaticResource DoyColor}"
+                    CheckedChanged="Checkbox_Checked"
+                    />
+
+
+                
+                <Label 
+                    Text="Modified JD:"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+                <Entry
+                    x:Name="MjdEntry"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Keyboard="Numeric"
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    Unfocused="MjdEntry_Unfocused"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+
+                <CheckBox
+                    x:Name="MjdCheckbox"
+                    Grid.Column="2"
+                    Grid.Row="3"
+                    Color="{StaticResource MjdColor}"
+                    CheckedChanged="Checkbox_Checked"
+                    
+                    />
+
+
+                <Label 
+                    Text="GPS Week:"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Grid.Column="0"
+                    Grid.Row="4"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+                <Label
+                    x:Name="GpsWeekLabel"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Grid.Column="1"
+                    Grid.Row="4"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+
+                <Label 
+                    Text="Day of Week:"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Grid.Column="0"
+                    Grid.Row="5"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+                <Label
+                    x:Name="DowLabel"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Grid.Column="1"
+                    Grid.Row="5"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+
+                <Label 
+                    Text="Julian Date:"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Grid.Column="0"
+                    Grid.Row="6"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+                <Label
+                    x:Name="JulianLabel"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Grid.Column="1"
+                    Grid.Row="6"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center"
+                    TextColor="{StaticResource MainTextColor}"
+                    />
+
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

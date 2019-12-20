@@ -1,0 +1,15 @@
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\bin\Release\netstandard2.0\Calendar.deps.json
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\bin\Release\netstandard2.0\Calendar.dll
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\bin\Release\netstandard2.0\ref\Calendar.dll
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\bin\Release\netstandard2.0\Calendar.pdb
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\obj\Release\netstandard2.0\Calendar.csprojAssemblyReference.cache
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\obj\Release\netstandard2.0\Views\CalendarPage.xaml.g.cs
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\obj\Release\netstandard2.0\Views\ListPage.xaml.g.cs
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\obj\Release\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\obj\Release\netstandard2.0\Calendar.AssemblyInfoInputs.cache
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\obj\Release\netstandard2.0\Calendar.AssemblyInfo.cs
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\obj\Release\netstandard2.0\Calendar.dll
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\obj\Release\netstandard2.0\ref\Calendar.dll
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar\obj\Release\netstandard2.0\Calendar.pdb
