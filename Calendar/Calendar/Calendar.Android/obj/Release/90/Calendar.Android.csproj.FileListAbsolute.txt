@@ -430,3 +430,17 @@ C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.A
 C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\mipmap-anydpi-v26\star.xml
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\mipmap-anydpi-v26\star_round.xml
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\mipmap-hdpi\star.png
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\mipmap-hdpi\star_round.png
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\mipmap-mdpi\star.png
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\mipmap-mdpi\star_round.png
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\mipmap-xhdpi\star.png
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\mipmap-xhdpi\star_round.png
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\mipmap-xxhdpi\star.png
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\mipmap-xxhdpi\star_round.png
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\mipmap-xxxhdpi\star.png
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\mipmap-xxxhdpi\star_round.png
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\drawable\star_foreground.xml
+C:\Users\mbremner\Documents\MobileProjects\Calendar\Calendar\Calendar\Calendar.Android\obj\Release\90\res\values\star_background.xml
